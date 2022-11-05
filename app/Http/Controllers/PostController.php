@@ -70,9 +70,10 @@ if (is_numeric($first_number) && is_numeric($second_number)) {
     }
     return response()->json([
             // 'status' => 'success',
+            'operation_type' => $operator,
+            'result' => $result,
             'slackUsername' => "PriscaEbuka",
-            'operation_types' => $operator,
-            'Result' => $result,
+            
         ]);
 }
 
