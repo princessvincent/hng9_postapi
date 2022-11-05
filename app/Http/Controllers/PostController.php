@@ -52,7 +52,7 @@ class PostController extends Controller
 
 $first_number = $request->input('x');
 $second_number = $request->input('y');
-$operator = $request->input('operation_types');
+$operator = $request->input('operation_type');
 $result = '';
 if (is_numeric($first_number) && is_numeric($second_number)) {
     switch ($operator) {
