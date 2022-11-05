@@ -69,7 +69,7 @@ if (is_numeric($first_number) && is_numeric($second_number)) {
             $result = $first_number / $second_number;
     }
     return response()->json([
-            'status' => 'success',
+            // 'status' => 'success',
             'slackUsername' => "PriscaEbuka",
             'operation_types' => $operator,
             'Result' => $result,
