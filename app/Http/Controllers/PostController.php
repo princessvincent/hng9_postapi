@@ -56,16 +56,16 @@ $operator = $request->input('operation_types');
 $result = '';
 if (is_numeric($first_number) && is_numeric($second_number)) {
     switch ($operator) {
-        case "add":
+        case "addition":
            $result = $first_number + $second_number;
             break;
-        case "subtract":
+        case "subtraction":
            $result = $first_number - $second_number;
             break;
-        case "multiply":
+        case "multiplication":
             $result = $first_number * $second_number;
             break;
-        case "divide":
+        case "division":
             $result = $first_number / $second_number;
     }
     return response()->json([
